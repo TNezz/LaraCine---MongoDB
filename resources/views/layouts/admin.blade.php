@@ -72,10 +72,10 @@
                             <a href="#"><i class="fa fa-film fa-fw"></i> Pelicula<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="http://127.0.0.1:8000/movie/create"><i class='fa fa-plus fa-fw'></i> Agregar</a>
+                                    <a href="/movie/create"><i class='fa fa-plus fa-fw'></i> Agregar</a>
                                 </li>
                                 <li>
-                                    <a href="http://127.0.0.1:8000/movie"><i class='fa fa-list-ol fa-fw'></i> Peliculas</a>
+                                    <a href="/movie"><i class='fa fa-list-ol fa-fw'></i> Peliculas</a>
                                 </li>
                             </ul>
                         </li>

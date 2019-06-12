@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 function Carga(){
 		var tablaDatos = $("#datos");
-	var route = "http://127.0.0.1:8000/movies";
+	var route = "/movies";
 	var peli = "";
 	var año = "";
 	var dir = "";
@@ -35,7 +35,7 @@ function Carga(){
 }
 
 function Eliminar(btn){
-	var route = "http://127.0.0.1:8000/movie/"+btn.value+"";
+	var route = "/movie/"+btn.value+"";
 	var token = $("#token").val();
 
 	$.ajax({
@@ -53,7 +53,7 @@ function Eliminar(btn){
 }
 
 function Mostrar (btn){
-	var route = "http://127.0.0.1:8000/movie/"+btn.value+"/edit";
+	var route = "/movie/"+btn.value+"/edit";
 	$.get(route, function(res){
 		$("#movie").val(res.movie);
 		$("#year").val(res.year);
@@ -67,7 +67,7 @@ $("#actualizar").click(function(){
 	var datoMovie = $("#movie").val();
 	var datoAño = $("#year").val();
 	var datoDir = $("#direction").val();
-	var route = "http://127.0.0.1:8000/movie/"+value+"";
+	var route = "/movie/"+value+"";
 	var token = $("#token").val();
 
 	$.ajax({

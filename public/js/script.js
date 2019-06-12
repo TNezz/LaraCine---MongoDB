@@ -2,7 +2,7 @@ $("#registro").click(function(){
 	var datoName = $("#movie").val();
 	var datoYear = $("#year").val();
 	var datoDir = $("#direction").val();
-	var route = "http://127.0.0.1:8000/movie";
+	var route = "/movie";
 	var token = $("#token").val();
 
 	$.ajax({
